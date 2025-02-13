@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["php", "nginx", "php-fpm", "php-mysqli"]
+
+[phases.build]
+cmds = ["echo 'Build CI3'"]
+
+[phases.start]
+cmds = ["php -S 0.0.0.0:8000"]
